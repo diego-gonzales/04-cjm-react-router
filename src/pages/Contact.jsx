@@ -5,11 +5,12 @@ const Contact = () => {
     <>
       <main>
         <h2>This is the contact page!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni labore
+          provident doloremque exercitationem amet facilis esse? Rem quibusdam
+          beatae neque?
+        </p>
       </main>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
     </>
   );
 };

@@ -5,11 +5,12 @@ const About = () => {
     <>
       <main>
         <h2>This is the about page!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+          dolores libero esse autem pariatur atque corporis sequi molestiae,
+          facilis saepe?
+        </p>
       </main>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
     </>
   );
 };

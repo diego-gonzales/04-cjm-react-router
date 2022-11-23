@@ -1,11 +1,11 @@
 import './App.css'
-import BasicConcepts from './components/BasicConceptos'
+import Main from './pages/Main'
 
 function App() {
   return (
     <div>
-      <h1>React Router</h1>
-      <BasicConcepts />
+      <h1>REACT ROUTER</h1>
+      <Main />
     </div>
   )
 }
