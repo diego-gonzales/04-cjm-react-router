@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <main>
-        <h2>This is the about page!</h2>
+        <h3>This is the about page!</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
           dolores libero esse autem pariatur atque corporis sequi molestiae,

@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 const Menubar = () => {
   let activeStyle = {
     backgroundColor: "#c9db62",
-    borderRadius: "10px"
+    borderRadius: "10px",
+    pointerEvents: "none"
   };
 
   return (
@@ -22,37 +23,37 @@ const Menubar = () => {
           Home
         </NavLink>
         <NavLink
-          to="about"
+          to="/about"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           About
         </NavLink>
         <NavLink
-          to="contact"
+          to="/contact"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           Contact
         </NavLink>
         <NavLink
-          to="profile/diego"
+          to="/profile/diego"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           My profile
         </NavLink>
         <NavLink
-          to="products"
+          to="/products"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           Products
         </NavLink>
         <NavLink
-          to="redirectPath"
+          to="/redirectPath"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           Redirect to Contact
         </NavLink>
         <NavLink
-          to="lol"
+          to="/lol"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           League of Legends

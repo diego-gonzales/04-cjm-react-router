@@ -4,12 +4,17 @@ const LeagueOfLegends = () => {
   let activeStyle = {
     backgroundColor: "#c9db62",
     borderRadius: "10px",
+    pointerEvents: "none"
   };
 
   return (
     <div>
       <h3>League of Legends</h3>
-      <p>This is the main page of League of Legends</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque,
+        cupiditate consectetur nisi est debitis voluptates sunt. Tempora,
+        expedita aut.
+      </p>
       <nav>
         <ul>
           <li>
