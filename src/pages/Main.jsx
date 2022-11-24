@@ -10,6 +10,9 @@ import LeagueOfLegends from "./LeagueOfLegends/LeagueOfLegends";
 import Characters from "./LeagueOfLegends/components/Characters";
 import Builds from "./LeagueOfLegends/components/Builds";
 import Runes from "./LeagueOfLegends/components/Runes";
+import Login from "./Login";
+import Dashboard from "./Dashboard";
+import ProtectedRoute from "../components/ProtectedRoute";
 
 const Main = () => {
   return (
@@ -37,12 +40,23 @@ const Main = () => {
           <Route path="characters" element={<Characters />} />
           <Route path="builds" element={<Builds />} />
           <Route path="runes" element={<Runes />} />
+          {/* <Route path="" element={<Navigate to="characters" />} /> */}
         </Route>
         {/* End nested routes */}
 
         {/* Client does not return a 404 status, the server should do it (Midudev tutorial) */}
         <Route path="*" element={<Error404 />} />
         {/*  */}
+
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute redirectPath="/login">
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </div>
   );

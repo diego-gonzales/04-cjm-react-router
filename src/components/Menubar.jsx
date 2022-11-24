@@ -58,6 +58,18 @@ const Menubar = () => {
         >
           League of Legends
         </NavLink>
+        <NavLink
+          to="/login"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Login
+        </NavLink>
+        <NavLink
+          to="/dashboard"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Dashboard
+        </NavLink>
       </nav>
     </>
   );
