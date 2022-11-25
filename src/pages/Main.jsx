@@ -28,10 +28,14 @@ const Main = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Route parameters */}
         <Route path="/profile/:username" element={<Profile />} />
+
+        {/* Route query params */}
         <Route path="/products" element={<Products />} />
 
-        {/* This path redirects to contact path */}
+        {/* Redirections */}
         <Route path="/redirectPath" element={<Navigate to="/contact" />} />
         {/* */}
 
@@ -44,10 +48,7 @@ const Main = () => {
         </Route>
         {/* End nested routes */}
 
-        {/* Client does not return a 404 status, the server should do it (Midudev tutorial) */}
-        <Route path="*" element={<Error404 />} />
-        {/*  */}
-
+        {/* Protected routes */}
         <Route path="/login" element={<Login />} />
         <Route
           path="/dashboard"
@@ -57,6 +58,10 @@ const Main = () => {
             </ProtectedRoute>
           }
         />
+
+        {/* Client does not return a 404 status, the server should do it (Midudev tutorial) */}
+        <Route path="*" element={<Error404 />} />
+        {/*  */}
       </Routes>
     </div>
   );
